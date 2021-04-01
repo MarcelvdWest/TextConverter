@@ -27,12 +27,12 @@ public class TextConverter implements CaseUtil {
         for (int i = 0 ; i < textTrim.length() ; i++) {
           
             try {
-                //Checks that the current caracter is not a space is a aphabetical
+                //Checks that the current character is not a space is a alphabetical
                 if (textTrim.charAt(i) != ' ' && Character.isAlphabetic(textTrim.charAt(i))) {
-                    //Changes fisrt character to lowercase
+                    //Changes first character to lowercase
                     if (i == 0) {
                             charArr[i] = Character.toLowerCase(textTrim.charAt(i));
-                    //Checks for a preceding space in the initail input and then capatilises character if applicable   
+                    //Checks for a preceding space in the initial input and then capitalises character if applicable
                     } else if (textTrim.charAt(i-1) == ' ') {
                         charArr[i - spaceCount] = Character.toUpperCase(textTrim.charAt(i));
                     //This changes all other alphabetical characters to lower case    
@@ -43,7 +43,7 @@ public class TextConverter implements CaseUtil {
                 } else if (textTrim.charAt(i) == ' '){
                     
                     spaceCount = spaceCount + 1;
-                  //This this will throw an error if there are any non-alphabetical charaters in the text input, the catch then stops processing  
+                  //This this will throw an error if there are any non-alphabetical characters in the text input, the catch then stops processing
                 } else {
                     errorState = true;
                     throw new IllegalArgumentException("You can only use alphabetical characters and spaces with this method.");
@@ -74,7 +74,7 @@ public class TextConverter implements CaseUtil {
                 //This changes all characters to lowercase    
                 } else if(Character.isAlphabetic(textTrim.charAt(i))) {
                     charArr[i] = Character.toLowerCase(textTrim.charAt(i));
-                //This this will throw an error if there are any non-alphabetical charaters in the text input, the catch then stops processing   
+                //This this will throw an error if there are any non-alphabetical characters in the text input, the catch then stops processing
                 } else {
                     errorState = true;
                     throw new IllegalArgumentException("You can only use alphabetical characters and spaces with this method.");
@@ -111,7 +111,7 @@ public class TextConverter implements CaseUtil {
                     } else {
                         charArr[i] = Character.toLowerCase(textTrim.charAt(i));
                     }                    
-                //This this will throw an error if there are any non-alphabetical charaters in the text input, the catch then stops processing    
+                //This this will throw an error if there are any non-alphabetical characters in the text input, the catch then stops processing
                 } else {
                     errorState = true;
                     throw new IllegalArgumentException("You can only use alphabetical characters, spaces and underscores with this method.");
