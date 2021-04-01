@@ -28,4 +28,4 @@ You will need to use java version 8 or higher.
 3.	Open the folder as a project using your IDE.
 4.	You can then use the project by implementing the methods inside the main class’s main method.
 
-If you still need to add the jar files to the classpath you can follow this <a href="https://github.com/junit-team/junit4/wiki/Download-and-Install">link
+If you still need the jar files to add to the classpath you can follow this <a href="https://github.com/junit-team/junit4/wiki/Download-and-Install">link
