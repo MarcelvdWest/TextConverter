@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package testsuite;
 
 import org.junit.runner.*;
@@ -10,7 +6,7 @@ import org.junit.runners.Suite;
 
 /**
  *
- * @author marce
+ * @author Marcel van der Westhuizen
  */
 
 @RunWith(Suite.class)
@@ -20,5 +16,4 @@ import org.junit.runners.Suite;
     TestUnitSnake.class,
     TestUnitHumanText.class
 })
-public class TextConverterTestSuite {
-}
+public class TextConverterTestSuite { }
